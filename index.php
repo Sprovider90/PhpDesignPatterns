@@ -66,3 +66,7 @@ spl_autoload_register("\\IMooc\\Autoload::autoload");
 //}
 //$page->set($str);
 //$page->show();
+//9.数据对象映射模式
+$user=new \IMooc\User(1);
+var_dump($user->id,$user->mark);
+$user->mark=22;
